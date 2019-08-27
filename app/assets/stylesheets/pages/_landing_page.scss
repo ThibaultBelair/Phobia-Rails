@@ -1,0 +1,39 @@
+.banner {
+  background-color: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+  background-position: center;
+  padding: 100px 0;
+  height: 600px;
+  display: flex;
+}
+
+h1 {
+  font-family: 'Baloo', cursive;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: black;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+.slogan {
+  font-family: 'Baloo', cursive;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: black;
+  margin-left: 100px;
+  padding-top: 20px;
+}
+
+.description {
+  font-family: 'Baloo', cursive;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: black;
+  margin-left: 100px;
+  padding-top: 50px;
+}
+
+#video {
+  width: 500px;
+  height: 300px;
+  position: right;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
