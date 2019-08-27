@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PhobiumTest < ActiveSupport::TestCase
+class PhobiasTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
