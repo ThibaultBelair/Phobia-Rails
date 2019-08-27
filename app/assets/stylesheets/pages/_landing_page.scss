@@ -1,14 +1,47 @@
-.homepage {
-  height: 750px;
-  background-color: white;
+.homepage, .homepage-1, .homepage-2{
+  height: 700px;
+  background-color:  #ffffd4;
+  margin-bottom: 7px;
+  border-radius: 7px;
+  font-family: 'Baloo Paaji', cursive;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
-.homepage-1 {
-  height: 750px;
-  background-color: white;
+.container {
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+  justify-content: space-between;
 }
 
-.homepage-2 {
-  height: 750px;
-  background-color: white;
+h1 {
+  font-family: 'Baloo Paaji', cursive;
+}
+
+.head-1 {
+  padding-top:50px;
+  text-align: center;
+}
+
+// .container-1 {
+//   justify-content: center;
+// }
+
+.card {
+  width: 600px;
+  height:400px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card-1 {
+  width: 600px;
+  height:400px;
+  border-radius: 8px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 130px;
+  text-align: center;
 }
