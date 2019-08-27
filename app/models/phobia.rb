@@ -1,0 +1,2 @@
+class Phobia < ApplicationRecord
+end
