@@ -1,39 +1,78 @@
-.banner {
-  background-color: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
-  background-position: center;
-  padding: 100px 0;
-  height: 600px;
+.homepage, .homepage-1, .homepage-2{
+  height: 700px;
+  background-color: white;
+  // margin-bottom: 7px;
+  // border-radius: 7px;
+  font-family: 'Baloo Paaji', cursive;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.homepage-1{
+  background-image: linear-gradient(to right top, #bef3e0, #c6f4dd, #cef4db, #d6f5da, #def5d9);
+}
+
+
+.container {
   display: flex;
+  align-items: center;
+  padding-top: 150px;
+  justify-content: space-between;
 }
 
 h1 {
-  font-family: 'Baloo', cursive;
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: black;
-  padding-left: 10px;
-  padding-bottom: 30px;
+  font-family: 'Baloo Paaji', cursive;
 }
 
-.slogan {
-  font-family: 'Baloo', cursive;
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: black;
-  margin-left: 100px;
-  padding-top: 20px;
+.head-1 {
+  padding-top:50px;
+  // text-align: center;
+  margin-bottom: 50px;
 }
 
-.description {
-  font-family: 'Baloo', cursive;
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: black;
-  margin-left: 100px;
-  padding-top: 50px;
-}
+// .container-1 {
+//   justify-content: center;
+// }
 
-#video {
-  width: 500px;
-  height: 300px;
-  position: right;
+.card {
+  width: 600px;
+  height:400px;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  background-image: linear-gradient(to right top, #99a290, #9fa992, #a5b194, #acb896, #b3bf97);
+}
+
+.container-1 {
+  padding-top: 70px;
+    display: flex;
+  align-items: center;
+   justify-content: space-between;
+}
+
+.card-1 {
+  padding-top: 200px;
+  width: 400px;
+  height:400px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  background-image: linear-gradient(to right top, #99a290, #9fa992, #a5b194, #acb896, #b3bf97);
+  // margin-right: 450px;
+}
+
+.front-1 {
+  text-align: center;
+  justify-content: center;
+}
+
+.list-1 {
+  margin-left: 100px;
+  // margin-right: 150px;
+}
+
+.features {
+  padding-top: 250px;
+   margin-right: 100px;
 }
