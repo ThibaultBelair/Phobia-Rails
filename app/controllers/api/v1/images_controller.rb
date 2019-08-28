@@ -10,14 +10,23 @@ class Api::V1::ImagesController < Api::V1::BaseController
 
     images = [
       {
-        url: "https://img.lemde.fr/2016/12/01/0/0/2250/1500/688/0/60/0/d0530c1_7640-1p0efxb.4ogsnhfr.JPG",
+        url: "https://img.lemde.fr/2017/08/03/0/0/3198/2976/688/0/60/0/7e8a69c_14438-jpx6uv.jpv00vbo6r.jpg",
         keyword: "spider"
       },
       {
-        url: "https://test.jpg",
+        url: "https://img.lemde.fr/2019/03/19/0/0/4237/2825/688/0/60/0/df70090_v9Bvi2-hWy02C-JQRW1xHs6J.jpg",
         keyword: "spider"
-      },{
-        url: "https://img.lemde.fr/2016/12/01/0/0/2250/1500/688/0/60/0/d0530c1_7640-1p0efxb.4ogsnhfr.JPG",
+      },
+      {
+        url: "https://img.lemde.fr/2017/08/03/0/0/3198/2976/688/0/60/0/7e8a69c_14438-jpx6uv.jpv00vbo6r.jpg",
+        keyword: "snake"
+      },
+      {
+        url: "https://img.lemde.fr/2019/03/19/0/0/4237/2825/688/0/60/0/df70090_v9Bvi2-hWy02C-JQRW1xHs6J.jpg",
+        keyword: "snake"
+      },
+      {
+        url: "https://test.jpg",
         keyword: "snake"
       }
     ]
@@ -27,14 +36,19 @@ class Api::V1::ImagesController < Api::V1::BaseController
     images.each do |img|
       url = Image.from(img[:url])
       keyword = Image.verify(img[:keyword])
-      # if url == false
-        # APPELER API
-      if url == true && keyword == false
-        @alert = false
-      elsif url == true && keyword == true
-        @alert = true
+
+      if url.include?(true)
+        if url == keyword
+          @alert = true
+        else
+          @alert = false
+        end
+      else
+        #appeler API
+        @alert = "sorry buddy"
       end
-      @responses << { url: img[:url].to_s, alert: @alert.to_s }
+
+      @responses << { url: img[:url], alert_url: url, alert_key: keyword, alert: @alert }
     end
   end
 

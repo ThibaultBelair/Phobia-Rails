@@ -1,14 +1,15 @@
 class Image < ApplicationRecord
   def self.from(url)
-    @images = Image.all
-    @images.each do |image|
-      Image.find(image.id).urls.include?(url)
+    images = Image.all
+    images.map do |image|
+      image.urls.include?(url)
     end
   end
 
   def self.verify(keyword)
-    @images.each do |image|
-      Image.find(image.id).keywords.include?(keyword)
+    images = Image.all
+    images.map do |image|
+      image.keywords.include?(keyword)
     end
   end
 end
