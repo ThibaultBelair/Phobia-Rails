@@ -1,5 +1,5 @@
-# json.array! @alerts do |alert|
-#   json.extract! alert, :id, :alert
+# json.array! @texts do |text|
+#   json.extract! text, :id, :alert
 # end
 
 # Il va falloir faire un map
