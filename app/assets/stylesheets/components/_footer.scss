@@ -1,6 +1,28 @@
 .footer-banner {
-  background-color: white;
-  height: 200px;
+  background-image: linear-gradient(to right top, #bef3e0, #c6f4dd, #cef4db, #d6f5da, #def5d9);
+  height: 300px;
   border-radius: 8px;
-  font-family: 'Gabriela', serif;
+  font-family: 'Baloo Paaji', cursive;
+
+}
+
+.footer-infos {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+
+.container-footer {
+  margin-left: 50px;
+
+}
+
+.container-footer {
+  font-family: 'Baloo Paaji', cursive;
+}
+
+.container-infos1 {
+  margin-right: 50px;
+  font-size: 20px;
 }
