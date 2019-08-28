@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      resources :alerts, only: [ :index, :new, :create, :update]
+      resources :words, only: [ :index, :new, :create, :update]
+      resources :images, only: [ :index, :new, :create, :update]
     end
   end
+
 end
