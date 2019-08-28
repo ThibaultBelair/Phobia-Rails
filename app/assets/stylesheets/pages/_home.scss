@@ -45,14 +45,11 @@ h1 {
   background-image: linear-gradient(to right top, #99a290, #9fa992, #a5b194, #acb896, #b3bf97);
 }
 
-.container-1 {
+.container-1, .container-2 {
   padding-top: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-    display: flex;
-  align-items: center;
-   justify-content: space-between;
 }
 
 .card-1 {
@@ -74,10 +71,19 @@ h1 {
 
 .list-1 {
   margin-left: 100px;
-  // margin-right: 150px;
 }
 
 .features {
   padding-top: 250px;
    margin-right: 100px;
+}
+
+.container-2 {
+  padding-top: 200px;
+  margin-left: 100px;
+}
+
+.comments {
+  text-align: center;
+  margin-right: 100px;
 }
