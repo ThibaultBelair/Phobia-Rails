@@ -1,16 +1,17 @@
 .homepage, .homepage-1, .homepage-2{
   height: 700px;
+  color: #696969;
   background-color: white;
   // margin-bottom: 7px;
   // border-radius: 7px;
   font-family: 'Baloo Paaji', cursive;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  box-shadow: 0px 0px 20px 1px rgba(162,162,162,0.36);
+
 }
 
 .homepage-1{
   background-image: linear-gradient(to right top, #bef3e0, #c6f4dd, #cef4db, #d6f5da, #def5d9);
 }
-
 
 .container {
   display: flex;
@@ -19,7 +20,7 @@
   justify-content: space-between;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Baloo Paaji', cursive;
 }
 
@@ -27,13 +28,15 @@ h1 {
   padding-top:30px;
   text-align: center;
   padding-top:50px;
-  // text-align: center;
   margin-bottom: 50px;
 }
 
-// .container-1 {
-//   justify-content: center;
-// }
+.head-2 {
+  text-align: center;
+  padding-top: 70px;
+  font-family: 'Baloo Paaji', cursive;
+  padding-right: 100px;
+}
 
 .card {
   width: 600px;
@@ -45,7 +48,7 @@ h1 {
   background-image: linear-gradient(to right top, #99a290, #9fa992, #a5b194, #acb896, #b3bf97);
 }
 
-.container-1, .container-2 {
+.container-1{
   padding-top: 70px;
   display: flex;
   align-items: center;
@@ -61,7 +64,7 @@ h1 {
   margin: 0 auto;
   justify-content: center;
   background-image: linear-gradient(to right top, #99a290, #9fa992, #a5b194, #acb896, #b3bf97);
-  // margin-right: 450px;
+
 }
 
 .front-1 {
@@ -73,17 +76,33 @@ h1 {
   margin-left: 100px;
 }
 
+.profil {
+  margin-left: 100px;
+  padding-top: 70px;
+  text-align: center;
+}
+
 .features {
   padding-top: 250px;
-   margin-right: 100px;
+  margin-right: 100px;
 }
 
 .container-2 {
-  padding-top: 200px;
-  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
 }
 
-.comments {
+
+.head-2 {
   text-align: center;
-  margin-right: 100px;
+  font-family: 'Baloo Paaji', cursive;
+  padding-right: 100px;
 }
+
+.features-1 {
+  padding-right: 100px;
+  font-size: 25px;
+}
+
