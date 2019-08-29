@@ -1,1 +1,0 @@
-google_vision.rb
