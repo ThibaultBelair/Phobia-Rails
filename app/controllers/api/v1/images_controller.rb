@@ -2,64 +2,70 @@ require 'json'
 require 'open-uri'
 
 class Api::V1::ImagesController < Api::V1::BaseController
-
   def index
     # dom = '#'
-    # image_serialized = open(dom).read
-    # images = JSON.parse(image_serialized)
+    # request_serialized = open(dom).read
+    # @request = JSON.parse(request_serialized)
 
-    images = [
-      {
-        url: "https://img.lemde.fr/2017/08/03/0/0/3198/2976/688/0/60/0/7e8a69c_14438-jpx6uv.jpv00vbo6r.jpg",
-        keyword: "spider"
-      },
-      {
-        url: "https://img.lemde.fr/2019/03/19/0/0/4237/2825/688/0/60/0/df70090_v9Bvi2-hWy02C-JQRW1xHs6J.jpg",
-        keyword: "spider"
-      },
-      {
-        url: "https://img.lemde.fr/2017/08/03/0/0/3198/2976/688/0/60/0/7e8a69c_14438-jpx6uv.jpv00vbo6r.jpg",
-        keyword: "snake"
-      },
-      {
-        url: "https://img.lemde.fr/2019/03/19/0/0/4237/2825/688/0/60/0/df70090_v9Bvi2-hWy02C-JQRW1xHs6J.jpg",
-        keyword: "snake"
-      },
-      {
-        url: "https://test.jpg",
-        keyword: "snake"
-      }
-    ]
+    request = {
+      url: ["https://img.lemde.fr/2016/12/01/0/0/2250/1500/688/0/60/0/d0530c1_7640-1p0efxb.4ogsnhfr.JPG", "https://img.lemde.fr/2019/03/19/0/0/4237/2825/688/0/60/0/df70090_v9Bvi2-hWy02C-JQRW1xHs6J.jpg", "https://test.JPG"],
+      keywords: ["spider", "snake"]
+    }
 
     @responses = []
 
-    images.each do |img|
-      url = Image.from(img[:url])
-      keyword = Image.verify(img[:keyword])
+    request[:url].each do |url|
+      image = Image.where("'#{url}' = ANY (urls)")
 
-      if url.include?(true)
-        if url == keyword
+      if image.present?
+        if image.keywords & request[:keywords] != []
           @alert = true
         else
           @alert = false
         end
       else
-        #appeler API
+        # Appeler IA
         @alert = "sorry buddy"
       end
 
-      @responses << { url: img[:url], alert_url: url, alert_key: keyword, alert: @alert }
+      @responses << { url: url, alert: @alert }
     end
   end
 
-  def new
+  private
+
+  def parse_request
   end
 
-  def create
-  end
+  # def set_response
+  #   @responses = []
+  #   @images.each do |img|
+  #     @url = Image.from(img[:url])
+  #     @keyword = Image.verify(img[:keyword])
 
-  def update
-  end
+  #     valid_image?
+
+  #     @responses << { url: img[:url], alert_url: @url, alert_key: @keyword, alert: @alert }
+  #   end
+  # end
+
+  # def valid_image?
+  #   if @url.include?(true)
+  #     alert?
+  #   else
+  #     # appeler IA
+  #     # alert?
+  #     @alert = "sorry buddy"
+  #   end
+  # end
+
+  # def alert?
+  #   if @url == @keyword
+  #     @alert = true
+  #   else
+  #     @alert = false
+  #   end
+  # end
 end
 
 # params => [{ tag: 'p', id: 'toto', content: 'lorem ispum' }, { ... }]
