@@ -1,5 +1,5 @@
 json.array! @responses do |response|
-  json.extract! response, :url, :alert
+  json.extract! response, :src, :alert
 end
 
 # Il va falloir faire un map
