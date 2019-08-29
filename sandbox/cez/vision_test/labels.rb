@@ -1,4 +1,4 @@
-ruby# image_path = "Google Cloud Storage URI, eg. 'gs://my-bucket/image.png'"
+# image_path = "Google Cloud Storage URI, eg. 'gs://my-bucket/image.png'"
 
 require 'awesome_print'
 require "google/cloud/vision"
