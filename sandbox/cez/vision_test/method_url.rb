@@ -41,6 +41,9 @@ class VisionClient
 
 end
 
+
+
+
 # url_detection(url)
 
 # ar = []

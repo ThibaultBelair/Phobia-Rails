@@ -25,4 +25,11 @@ class GoogleVision
 
     image_urls
   end
+
+
+
+
+
+
+
 end
