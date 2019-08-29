@@ -15,10 +15,10 @@ class Api::V1::ImagesController < Api::V1::BaseController
     # @request = JSON.parse(request_serialized)
 
     # TEST #
-      @request = {
-        urls: ["https://img.lemde.fr/2016/12/01/0/0/2250/1500/688/0/60/0/d0530c1_7640-1p0efxb.4ogsnhfr.JPG", "https://media.mnn.com/assets/images/2019/08/baby_jumping_spider.jpg", "https://img.lemde.fr/2019/03/19/0/0/4237/2825/688/0/60/0/df70090_v9Bvi2-hWy02C-JQRW1xHs6J.jpg", "https://test.JPG"],
-        keywords: ["spider", "dog"]
-      }
+      # @request = {
+      #   urls: ["https://upload.wikimedia.org/wikipedia/commons/8/8f/Latrodectus_hasseltii_close.jpg", "https://test.jpg"],
+      #   keywords: ["Spider", "Dog"]
+      # }
     # TEST #
   end
 
@@ -27,12 +27,12 @@ class Api::V1::ImagesController < Api::V1::BaseController
 
     @request[:urls].each do |url|
       @image = Image.find_by("'#{url}' = ANY (urls)")
-
+      ap @image
       if @image.present?
         alert?
       else
-        # Appeler IA
-        @alert = "sorry buddy"
+        @image = Image.create_from_google(url)
+        alert?
       end
 
       @responses << { src: url, alert: @alert }
@@ -47,6 +47,3 @@ class Api::V1::ImagesController < Api::V1::BaseController
     end
   end
 end
-
-# params => [{ tag: 'p', id: 'toto', content: 'lorem ispum' }, { ... }]
-# output => [{ id: 'toto', alert: true }, { ... }]

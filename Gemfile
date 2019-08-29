@@ -19,6 +19,7 @@ gem 'webpacker'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'awesome_print'
 end
 
 group :development, :test do
