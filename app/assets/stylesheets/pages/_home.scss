@@ -1,10 +1,11 @@
-.homepage, .homepage-1, .homepage-2{
-  height: 700px;
+.homepage{
   color: #696969;
   background-color: white;
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'helvetica', sans-serif;
   box-shadow: 0px 0px 20px 1px rgba(162,162,162,0.36);
-
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 .homepage-1{
@@ -21,11 +22,13 @@
   padding-top: 100px;
 }
 
-.container {
+.block-container {
+  height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 150px;
+  padding: 150px;
   justify-content: space-between;
+  scroll-snap-align: center;
 }
 
 h1, h2 {
