@@ -2,8 +2,6 @@
   height: 700px;
   color: #696969;
   background-color: white;
-  // margin-bottom: 7px;
-  // border-radius: 7px;
   font-family: 'Baloo Paaji', cursive;
   box-shadow: 0px 0px 20px 1px rgba(162,162,162,0.36);
 
@@ -11,6 +9,16 @@
 
 .homepage-1{
   background-image: linear-gradient(to right top, #bef3e0, #c6f4dd, #cef4db, #d6f5da, #def5d9);
+}
+
+.setup {
+  justify-content: space-between;
+  display: flex;
+}
+
+.phobia-title {
+  text-align: center;
+  padding-top: 100px;
 }
 
 .container {
@@ -24,85 +32,52 @@ h1, h2 {
   font-family: 'Baloo Paaji', cursive;
 }
 
-.head-1 {
-  padding-top:30px;
-  text-align: center;
-  padding-top:50px;
-  margin-bottom: 50px;
-}
-
-.head-2 {
-  text-align: center;
-  padding-top: 70px;
-  font-family: 'Baloo Paaji', cursive;
-  padding-right: 100px;
-}
-
 .card {
   width: 600px;
   height:400px;
   border-radius: 8px;
   text-align: center;
-  margin: 0 auto;
   justify-content: center;
   background-image: linear-gradient(to right top, #99a290, #9fa992, #a5b194, #acb896, #b3bf97);
 }
 
-.container-1{
-  padding-top: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.page-1{
+  padding-top: 100px;
+  padding-left: 50px;
+  // align-items: center;
+//   justify-content:center;
 }
 
 .card-1 {
-  padding-top: 200px;
   width: 400px;
   height:400px;
   border-radius: 8px;
   text-align: center;
-  margin: 0 auto;
-  justify-content: center;
   background-image: linear-gradient(to right top, #99a290, #9fa992, #a5b194, #acb896, #b3bf97);
-
+  margin-left: 200px;
 }
 
-.front-1 {
-  text-align: center;
-  justify-content: center;
+
+.profil, .profil1, .profil2 {
+  align-items: center;
+  margin-left: 200px;
+  padding-top: 100px;
+  // text-align: center;
 }
 
-.list-1 {
-  margin-left: 100px;
-}
-
-.profil {
-  margin-left: 100px;
-  padding-top: 70px;
-  text-align: center;
-}
-
-.features {
-  padding-top: 250px;
-  margin-right: 100px;
-}
-
-.container-2 {
+.profil-card {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 100px;
 }
-
 
 .head-2 {
   text-align: center;
   font-family: 'Baloo Paaji', cursive;
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
-.features-1 {
-  padding-right: 100px;
-  font-size: 25px;
+.features-1, .features-2, .features-3 {
+  flex-grow: 1;
 }
-
