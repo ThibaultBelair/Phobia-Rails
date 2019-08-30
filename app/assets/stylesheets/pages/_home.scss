@@ -14,11 +14,13 @@
 .setup {
   justify-content: space-between;
   display: flex;
+  padding-top: 50px;
+  margin-right: 200px;
 }
 
 .phobia-title {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .container {
@@ -43,11 +45,12 @@ h1, h2 {
 
 .page-1{
   padding-top: 100px;
-  padding-left: 50px;
-  // align-items: center;
-//   justify-content:center;
+  padding-left: 100px;
 }
 
+.flex-container {
+  margin-left: 50px;
+}
 .card-1 {
   width: 400px;
   height:400px;
@@ -62,7 +65,6 @@ h1, h2 {
   align-items: center;
   margin-left: 200px;
   padding-top: 100px;
-  // text-align: center;
 }
 
 .profil-card {
@@ -76,6 +78,10 @@ h1, h2 {
   text-align: center;
   font-family: 'Baloo Paaji', cursive;
   padding-right: 50px;
+}
+
+.features {
+  margin-left: 50px;
 }
 
 .features-1, .features-2, .features-3 {
