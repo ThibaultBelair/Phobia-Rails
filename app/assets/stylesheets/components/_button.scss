@@ -1,10 +1,19 @@
-.btn-flat {
-  font-family: 'Baloo', cursive;
-  color: white;
-  padding: 8px 24px;
-  border-radius: 23px;
-  background: #1EDD88;
-  transition: background 0.3s ease;
+.button-blue {
+  background: #70EED6;
+  font-family: 'helvetica', sans-serif;
+  color: #3d3d42;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  padding: 16px 24px;
+  margin: 8px;
+  border-radius: 8px;
+  transition: background 0.8s ease;
   width: 150px;
+}
+
+.button-blue:hover {
+  background: #a4ebdd;
+  color: #3d3d42;
+  text-decoration: none;
 }
 
