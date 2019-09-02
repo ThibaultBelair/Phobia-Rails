@@ -1,3 +1,17 @@
+a {
+font-family: 'Montserrat', sans-serif;
+
+}
+
+p {
+    margin-top: 58px;
+    margin-bottom: 1rem;
+}
+
+.strong {
+  color: #B9F9EC;
+}
+
 .homepage{
   color: #3d3d42;
   background-color: white;
@@ -40,7 +54,8 @@
 }
 
 h1, h2 {
-  font-family: 'Baloo Paaji', cursive;
+font-family: 'Montserrat', sans-serif;
+color: #696767;
 }
 
 .card {
@@ -58,8 +73,13 @@ h1, h2 {
 }
 
 .flex-container {
-  margin-left: 50px;
+  margin-left: -24px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 150px;
 }
+
+
+
 .card-1 {
   width: 400px;
   height:400px;
