@@ -104,14 +104,31 @@ color: #696767;
 
 
 .card-1 {
-  width: 400px;
-  height:400px;
+  width: 297px;
+  height: 350px;
   border-radius: 8px;
   text-align: center;
   background-image: linear-gradient(to top, white, #bef3e0, #70EED6);
-  margin-left: 200px;
+  margin-left: -25px;
 }
 
+.card-1 img {
+    width: 283px;
+    height: 502px;
+    margin-top: -77px;
+}
+
+.learn h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #FFFFFF;
+  margin: 11px;
+  padding-left: 21px;
+}
+
+.learn-strong {
+  color: #B9F9EC;
+}
 
 .profil {
   align-items: center;

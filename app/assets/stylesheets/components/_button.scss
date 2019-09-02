@@ -18,3 +18,23 @@
 }
 
 
+.button-blue-2 {
+  background: #70EED6;
+  font-family: 'Montserrat', sans-serif;
+  color: #3d3d42;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  padding: 16px 24px;
+  margin: 20px;
+  border-radius: 8px;
+  transition: background 0.8s ease;
+  width: 150px;
+}
+
+.button-blue-2:hover {
+  background: #696767;
+  color: white;
+  text-decoration: none;
+}
+
+

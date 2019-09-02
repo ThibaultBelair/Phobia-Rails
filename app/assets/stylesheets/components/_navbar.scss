@@ -11,7 +11,13 @@
 
 .navbar-light .navbar-brand {
   color: #696767;
+  transition: background 0.8s ease;
 }
+.navbar-light .navbar-brand:hover {
+  color: #70EED6;
+
+}
+
 
 
 .navbar-lewagon .navbar-collapse {
