@@ -5,7 +5,7 @@
   letter-spacing: 2px;
   font-weight: lighter;
   padding: 16px 24px;
-  margin: 8px;
+  margin: 0px;
   border-radius: 8px;
   transition: background 0.8s ease;
   width: 150px;
@@ -32,9 +32,27 @@
 }
 
 .button-blue-2:hover {
+  background: white;
+  color: #2EC1C8;
+  text-decoration: none;
+}
+
+.button-blue-3 {
+  background: #70EED6;
+  font-family: 'Montserrat', sans-serif;
+  color: #3d3d42;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  padding: 16px 24px;
+  margin: 0px;
+  border-radius: 8px;
+  transition: background 0.8s ease;
+  width: 150px;
+  margin-right: -217px;
+}
+
+.button-blue-3:hover {
   background: #696767;
   color: white;
   text-decoration: none;
 }
-
-

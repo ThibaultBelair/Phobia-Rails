@@ -9,6 +9,8 @@ p {
     background: -webkit-linear-gradient(#eee, #333);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
 }
 
 .strong {
@@ -118,6 +120,10 @@ color: #696767;
     margin-top: -77px;
 }
 
+.learn {
+  line-height: 32px;
+}
+
 .learn h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
@@ -128,6 +134,26 @@ color: #696767;
 
 .learn-strong {
   color: #B9F9EC;
+}
+
+.learn-strong-block {
+  color: #ec7575;
+}
+
+.head-2 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #696767;
+  margin: 11px;
+  padding-left: 21px;
+}
+
+.quote {
+  color: #75e8d1;
+}
+
+.special {
+  color: #ec7575;
 }
 
 .profil {
@@ -166,3 +192,21 @@ color: #696767;
 .features-1 {
   flex-grow: 1;
 }
+
+
+.profil-card img {
+  margin-top: -17px;
+  margin-bottom: 29px;
+  margin-left: -54px;
+  border: 3px solid;
+  border-radius: 100px;
+  border-color: #B9F9EC;
+}
+
+.profil-card p {
+  margin-top: -23px;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  margin-left: -60px;
+}
+
