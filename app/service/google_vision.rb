@@ -1,13 +1,12 @@
 require "google/cloud/vision"
 
 class GoogleVision
-
   def self.url_detection(image_path)
     image_annotator = Google::Cloud::Vision::ImageAnnotator.new
 
     response = image_annotator.web_detection(
       image:       image_path,
-      max_results: 20 # optional, defaults to 10
+      max_results: 10 # optional, defaults to 10
     )
 
     image_urls = []
@@ -22,14 +21,10 @@ class GoogleVision
         image_urls << match.url
       end
     end
-
     return image_urls
-
   end
 
-
   def self.label_detection(image_path)
-
     image_annotator = Google::Cloud::Vision::ImageAnnotator.new
 
       response = image_annotator.label_detection(
@@ -44,12 +39,8 @@ class GoogleVision
          image_labels << label.description
         end
       end
-
     return image_labels
-
   end
-
 end
-
 
 
