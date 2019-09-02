@@ -6,6 +6,9 @@ font-family: 'Montserrat', sans-serif;
 p {
     margin-top: 58px;
     margin-bottom: 1rem;
+    background: -webkit-linear-gradient(#eee, #333);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .strong {
@@ -56,6 +59,7 @@ p {
 h1, h2 {
 font-family: 'Montserrat', sans-serif;
 color: #696767;
+
 }
 
 .card {
