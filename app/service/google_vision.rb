@@ -15,7 +15,6 @@ class GoogleVision
       # res.web_detection.web_entities.each do |entity|
       #   puts entity.description
       # end
-
       res.web_detection.full_matching_images.each do |match|
         # puts match.url
         image_urls << match.url
