@@ -13,7 +13,9 @@ class Api::V1::ImagesController < Api::V1::BaseController
     params[:images].map do |img|
       @url = img[:url]
 
-      if /^https:/.match?(@url)
+      if @url.end_with?('svg')
+        @alert = false
+      elsif /^https:/.match?(@url)
         valid_url
       else
         @alert = true
