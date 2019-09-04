@@ -15,16 +15,15 @@ class GoogleVision
       # res.web_detection.web_entities.each do |entity|
       #   puts entity.description
       # end
-      begin
-        res.web_detection.full_matching_images.each do |match|
-          # puts match.url
-          image_urls << match.url
-        end
-      rescue StandardError => e
-        puts "Error for image_path, #{e.message}"
+      res.web_detection.full_matching_images.each do |match|
+        # puts match.url
+        image_urls << match.url
       end
     end
     return image_urls
+  rescue
+    puts "Error in url detection for image #{image_path}"
+    nil
   end
 
   def self.label_detection(image_path)
@@ -43,6 +42,9 @@ class GoogleVision
         end
       end
     return image_labels
+  rescue
+    puts "Error in label detection for image #{image_path}"
+    nil
   end
 end
 
