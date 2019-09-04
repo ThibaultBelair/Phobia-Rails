@@ -15,11 +15,15 @@ class Api::V1::ImagesController < Api::V1::BaseController
 
       if @url.end_with?('svg')
         @alert = false
+        puts "img not valid"
       elsif /^https:/.match?(@url)
         valid_url
       else
         @alert = true
+        puts "img not valid"
       end
+
+      finished = Time.now
 
       { id: img[:id], alert: @alert }
     end
@@ -29,8 +33,10 @@ class Api::V1::ImagesController < Api::V1::BaseController
     @image = Image.find_by("'#{@url}' = ANY (urls)")
 
     if @image.present?
+      puts "image present"
       alert?
     else
+      puts "asking vision for #{@url}"
       @image = Image.create_from_google(@url)
       alert?
     end
