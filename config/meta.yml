@@ -1,5 +1,5 @@
-meta_product_name: "Product Name"
-meta_title: "Product name - Product tagline"
-meta_description: "Relevant description"
-meta_image: "cover.png" # should exist in `app/assets/images/`
+meta_product_name: "Phobia"
+meta_title: "Phobia - Scroll without fear"
+meta_description: "Extension to block your Phobia"
+meta_image: "logo_transparent.png" # should exist in `app/assets/images/`
 twitter_account: "@PhobiaLive"
