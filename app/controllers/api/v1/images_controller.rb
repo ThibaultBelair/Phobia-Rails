@@ -37,7 +37,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
   end
 
   def alert?
-    if (@image.keywords.map(&:downcase) & params[:phobias].map(&:downcase)).empty?
+    if @image && (@image.keywords.map(&:downcase) & params[:phobias].map(&:downcase)).empty?
       @alert = false
     else
       @alert = true
