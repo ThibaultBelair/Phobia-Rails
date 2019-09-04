@@ -1,5 +1,15 @@
 <div class="homepage">
 
+
+  <!-- Meta Setup-->
+
+<% content_for :meta_title, "#{@offer.name} is on #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @offer.description %>
+<% content_for :meta_image, cl_image_path(@offer.photo.path) %>
+
+
+
+
   <!-- Page 1 -->
   <div class="block-container">
     <div class="flex-container">
