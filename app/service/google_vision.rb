@@ -15,9 +15,13 @@ class GoogleVision
       # res.web_detection.web_entities.each do |entity|
       #   puts entity.description
       # end
-      res.web_detection.full_matching_images.each do |match|
-        # puts match.url
-        image_urls << match.url
+      begin
+        res.web_detection.full_matching_images.each do |match|
+          # puts match.url
+          image_urls << match.url
+        end
+      rescue StandardError => e
+        puts "Error for image_path, #{e.message}"
       end
     end
     return image_urls
