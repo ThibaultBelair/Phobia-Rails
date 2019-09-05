@@ -9,4 +9,10 @@ class Image < ApplicationRecord
       Image.create(urls: urls, keywords: keywords)
     end
   end
+
+  def match_phobia?(phobias)
+    keywords.any? do |keyword|
+      phobias.any? { |phobia| keyword.downcase.include?(phobia.downcase) }
+    end
+  end
 end
