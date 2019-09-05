@@ -44,9 +44,9 @@ class Api::V1::ImagesController < Api::V1::BaseController
 
   def alert?
     if @image && @image.match_phobia?(params[:phobias])
-      @alert = false
-    else
       @alert = true
+    else
+      @alert = false
     end
   end
 end

@@ -23,7 +23,7 @@ class GoogleVision
     return image_urls
   rescue
     puts "Error in url detection for image #{image_path}"
-    nil
+    []
   end
 
   def self.label_detection(image_path)
